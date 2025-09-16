@@ -1,9 +1,9 @@
 package main
 
-//v1.1.1
+//v1.1.2
 
 import "fmt"
 
-func main(){
+func main() {
 	fmt.Println("hello world")
 }
