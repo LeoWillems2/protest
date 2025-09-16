@@ -3,4 +3,3 @@ t: t.go
 
 lauch:
 	./t
-	
