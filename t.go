@@ -11,4 +11,5 @@ func main() {
 
 	fmt.Println("hello mars")
 	fmt.Println("hello sun")
+	fmt.Println("hello mercury")
 }

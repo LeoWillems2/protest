@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     name: Run Tests
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       # Step 1: Checkout the repository code
@@ -18,9 +18,11 @@ jobs:
       # Step 2: Set up the Go environment
       - name: Set up Go
         uses: actions/setup-go@v5
-        #with:
-          ## Automatically handle caching for faster runs
-          #cache: true
+        with:
+          # Specify your Go version or use a stable alias
+          go-version: '1.25'
+          # Automatically handle caching for faster runs
+          cache: true
 
       # Step 3: Install dependencies
       # 'go mod download' is usually cleaner for CI than 'go get'
