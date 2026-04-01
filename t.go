@@ -4,12 +4,11 @@ package main
 
 import "fmt"
 
+func Prt(s string) string {
+	fmt.Println(s)
+	return s + "!"
+}
+
 func main() {
-	fmt.Println("hello world")
-
-	fmt.Println("hello moon")
-
-	fmt.Println("hello mars")
-	fmt.Println("hello sun")
-	fmt.Println("hello mercury")
+	Prt("Sun")
 }
